@@ -2,7 +2,7 @@
 
 * generated
 
-# Design Document: Improving Human Health with Small-Scale Biotechnology at the Cellular Level
+# Improving Human Health with Small-Scale Biotechnology at the Cellular Level
 
 ---
 
