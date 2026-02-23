@@ -8,7 +8,7 @@
 
 ## 1. Abstract
 
-This document outlines a design framework for improving human health through small-scale biotechnology interventions operating at the cellular and subcellular level. Rather than focusing on neural interfaces or organ-scale devices, the approach centers on engineering biological systems from within: artificial organelles, targeted gene editing, programmable delivery vehicles, and synthetic cellular circuits. These interventions aim to restore, enhance, or supplement native cellular function in the context of aging, metabolic disease, immune dysfunction, and tissue degeneration.
+This document outlines a design framework for improving human health through small-scale biotechnology interventions operating at the cellular and subcellular level. The approach centers on engineering biological systems from within: artificial organelles, targeted gene editing, programmable delivery vehicles, and synthetic cellular circuits. These interventions aim to restore, enhance, or supplement native cellular function in the context of aging, metabolic disease, immune dysfunction, and tissue degeneration.
 
 ---
 
