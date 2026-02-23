@@ -32,16 +32,17 @@ Artificial organelles represent a category of engineered subcellular structures 
 
 **Design targets:**
 
-- **Mitochondrial supplementation.** Synthetic compartments capable of performing electron transport chain reactions could be deployed in cells with mitochondrial dysfunction. This is relevant to aging, Parkinson's disease, and metabolic syndrome. Dipeptide coacervates have been demonstrated as membraneless artificial organelles capable of hosting bioorthogonal catalysis [Cao et al., 2024].
+- **Mitochondrial supplementation.** Synthetic compartments that augment mitochondrial function—for example, by providing antioxidant enzymatic activity or supplementing specific metabolic reactions—could be deployed in cells with mitochondrial dysfunction. This is relevant to aging, Parkinson's disease, and metabolic syndrome. Full reconstitution of the electron transport chain in synthetic compartments remains an unsolved challenge due to the complexity of membrane-embedded protein complexes I–V and the requirement for a proton motive force. However, partial metabolic supplementation is more tractable: dipeptide coacervates have been demonstrated as membraneless artificial organelles capable of hosting bioorthogonal catalysis [Cao et al., 2024], and Wang et al. showed that artificial organelles derived from neural stem cells can improve oxidative phosphorylation [Wang et al., 2024].
 
-- **Lysosomal augmentation.** Engineered vesicles with enhanced proteolytic capability could clear misfolded protein aggregates (amyloid-beta, alpha-synuclein, tau) that native lysosomes fail to process. Giant organelle vesicles have been used to study intracellular membrane mechanics, providing a platform for designing such structures [Santinho et al., 2024].
+- **Lysosomal augmentation.** Engineered vesicles with enhanced proteolytic capability could clear misfolded protein aggregates (amyloid-beta, alpha-synuclein, tau) that native lysosomes fail to process. Understanding the mechanical and biophysical properties of intracellular membranes is a prerequisite for designing such vesicles; giant organelle vesicles have been developed to study these properties [Santinho et al., 2024], though the design of functional proteolytic artificial lysosomes remains an open challenge.
 
-- **Stimuli-responsive synthetic organelles.** Vesicles that activate in response to specific intracellular signals (pH shifts, ROS accumulation, calcium flux) could provide on-demand therapeutic activity [Gispert et al., 2022].
+- **Stimuli-responsive synthetic organelles.** Vesicles that activate in response to specific environmental signals could provide on-demand therapeutic activity. Gispert et al. demonstrated stimuli-responsive vesicles as distributed artificial organelles in bacterial systems [Gispert et al., 2022]. Translating this concept to mammalian intracellular environments—where relevant triggers include pH shifts, ROS accumulation, and calcium flux—remains an active area of research with additional engineering challenges including endosomal escape and cytoplasmic stability.
 
 **Open questions:**
-- Long-term stability inside human cells (weeks to months)
-- Immune evasion and biocompatibility of synthetic compartments
-- Scalable manufacturing of organelle-scale structures
+- Long-term stability inside human cells (weeks to months) — most demonstrations are in vitro over hours to days
+- Immune evasion and biocompatibility of synthetic compartments in vivo
+- Scalable manufacturing of organelle-scale structures with batch-to-batch consistency
+- Endosomal escape: ensuring delivered artificial organelles reach the cytoplasm rather than being degraded in lysosomes
 
 ### 3.2 Precision Gene Editing for Cellular Repair
 
@@ -49,11 +50,11 @@ CRISPR/Cas9 and its derivatives (base editors, prime editors) provide a programm
 
 **Design targets:**
 
-- **Mitochondrial genome editing.** The mitochondrial genome is a high-value target because mtDNA mutations accumulate with age and cause a defined set of diseases. CRISPR-based base editors have shown prospects for mtDNA engineering [Eghbalsaied et al., 2024]. Chemical modifications of adenine base editor mRNA and guide RNA have expanded application scope [Jiang et al., 2020].
+- **Mitochondrial genome editing.** The mitochondrial genome is a high-value target because mtDNA mutations accumulate with age and cause a defined set of diseases. However, traditional CRISPR-Cas9 approaches face a fundamental barrier: guide RNAs cannot be efficiently imported into the mitochondrial matrix. The primary tools for mtDNA editing are instead TALE-based: DdCBE (double-stranded DNA deaminase-derived cytosine base editor) enables C-to-T conversions in mtDNA [Mok et al., 2020], and TALED extends this to A-to-G editing. Eghbalsaied et al. reviewed the broader prospects and remaining challenges for mitochondrial genome engineering [Eghbalsaied et al., 2024]. Chemical modifications of base editor mRNA and guide RNA have expanded the application scope of nuclear base editing [Jiang et al., 2020], and analogous delivery optimization will be needed for mitochondrial editors.
 
-- **Somatic cell correction.** For monogenic diseases (sickle cell, cystic fibrosis, Huntington's), ex vivo editing of patient-derived cells followed by reinfusion is already entering clinical use. The design challenge is moving toward in vivo delivery with tissue specificity.
+- **Somatic cell correction.** For monogenic diseases affecting accessible cell populations, ex vivo editing of patient-derived cells followed by reinfusion is already in clinical use: Casgevy (exagamglogene autotemcel) received FDA approval in December 2023 for sickle cell disease and transfusion-dependent beta-thalassemia. Cystic fibrosis (airway epithelium) and Huntington's disease (diffuse CNS neurons) exemplify the spectrum of in vivo delivery challenges—the former may be addressable via inhaled delivery to lung epithelium, while the latter requires crossing the blood-brain barrier and editing neurons distributed throughout the brain, making ex vivo approaches impractical. The central design challenge is achieving in vivo delivery with tissue specificity.
 
-- **Epigenetic reprogramming.** Synthetic regulatory elements designed via generative models (diffusion-based approaches) can control chromatin accessibility and gene expression without permanent genome modification [DaSilva et al., 2024]. ChromoGen can predict single-cell chromatin conformations, enabling rational design of epigenetic interventions [Schuette et al., 2025].
+- **Epigenetic reprogramming.** Synthetic regulatory elements designed via generative models (diffusion-based approaches) may enable control of chromatin accessibility and gene expression without permanent genome modification [DaSilva et al., 2024; preprint, not yet peer-reviewed]. Complementary computational tools like ChromoGen can predict single-cell chromatin conformations from sequence [Schuette et al., 2025], which could inform the rational design of epigenetic interventions, though the gap between predicting chromatin states and engineering desired transcriptional outcomes remains substantial.
 
 **Delivery engineering:**
 - Cas9 ribonucleoprotein preparation protocols are well-established [Lin et al., 2022]
@@ -62,13 +63,13 @@ CRISPR/Cas9 and its derivatives (base editors, prime editors) provide a programm
 
 ### 3.3 Bioorthogonal Chemistry for In Vivo Cellular Intervention
 
-Bioorthogonal reactions (click chemistry and related approaches) enable selective chemical transformations inside living systems without interfering with native biochemistry [Kolb et al., 2001; Scinto et al., 2021].
+Bioorthogonal reactions enable selective chemical transformations inside living systems without interfering with native biochemistry. The conceptual foundation was laid by click chemistry [Kolb et al., 2001] and extended to biological contexts by Bertozzi's development of bioorthogonal ligation reactions in living organisms [Scinto et al., 2021].
 
 **Design targets:**
 
 - **Targeted drug activation.** Prodrugs equipped with bioorthogonal handles can be activated only in cells pre-labeled with a complementary reactive group. This creates a two-step targeting system with spatial precision at the cellular level [Mitry et al., 2023].
 
-- **In situ assembly of therapeutic structures.** Bioorthogonal reactions could assemble functional nanomaterials or polymer scaffolds directly inside target cells, avoiding the challenge of delivering pre-formed structures across cell membranes.
+- **In situ assembly of therapeutic structures.** In principle, bioorthogonal reactions could assemble functional nanomaterials or polymer scaffolds directly inside target cells, avoiding the challenge of delivering pre-formed structures across cell membranes. This concept is largely speculative at present; demonstrated bioorthogonal reactions in vivo typically involve small-molecule modifications rather than large-scale structural assembly. Significant hurdles include reaction kinetics at low intracellular concentrations, cytotoxicity of reactive intermediates, and achieving sufficient yields for functional structures.
 
 - **Metabolic labeling for diagnostics.** Modified sugars, amino acids, or lipids that incorporate bioorthogonal handles into cell-surface glycans or intracellular proteins enable non-invasive tracking of cellular health and disease progression.
 
@@ -78,9 +79,9 @@ Yamanaka factors (Oct4, Sox2, Klf4, c-Myc) demonstrated that somatic cells can b
 
 **Design targets:**
 
-- **Partial reprogramming for age reversal.** Cyclic, short-duration expression of Yamanaka factors in aged tissues can reset epigenetic clocks and restore youthful gene expression patterns without inducing tumorigenesis. The design challenge is achieving precise temporal control of factor expression in vivo.
+- **Partial reprogramming for age reversal.** Cyclic, short-duration expression of Yamanaka factors in aged tissues has been shown to reset epigenetic clocks and restore youthful gene expression patterns in progeria mouse models [Ocampo et al., 2016]. Subsequent work has extended these findings to naturally aged mice. However, tumorigenesis risk from sustained or excessive reprogramming factor expression is not fully resolved, and the therapeutic window between rejuvenation and dedifferentiation-induced oncogenesis remains narrow. The central design challenge is achieving precise temporal control of factor expression in vivo with adequate safety margins.
 
-- **Direct lineage conversion.** Bypassing the pluripotent state entirely, somatic cells can be converted directly to needed cell types (e.g., fibroblasts to cardiomyocytes, astrocytes to neurons) using defined transcription factor cocktails. This approach is relevant to tissue repair after injury.
+- **Direct lineage conversion.** Bypassing the pluripotent state entirely, somatic cells can be converted directly to needed cell types using defined transcription factor cocktails. Ieda et al. demonstrated direct reprogramming of fibroblasts to cardiomyocyte-like cells using Gata4, Mef2c, and Tbx5 [Ieda et al., 2010], and Qian et al. showed in vivo cardiac reprogramming [Qian et al., 2012]. Astrocyte-to-neuron conversion has been demonstrated using NeuroD1 and other factors [Rivetti di Val Cervo et al., 2017]. This approach is relevant to tissue repair after injury, though conversion efficiency, functional maturation, and long-term stability of converted cells remain active research challenges.
 
 - **Synthetic stem cell niches.** Biomaterial scaffolds that mimic the signaling environment of native stem cell niches can direct endogenous stem cell behavior for tissue regeneration [Tian et al., 2024].
 
@@ -88,7 +89,7 @@ Yamanaka factors (Oct4, Sox2, Klf4, c-Myc) demonstrated that somatic cells can b
 
 Delivering therapeutic cargo to specific cell types in vivo remains the central bottleneck. Multiple platforms are under development:
 
-- **Biomimetic nanoparticles.** Cell membrane-coated nanoparticles inherit the surface properties of their source cells, enabling immune evasion and tissue-specific targeting [Nature STTT, 2021].
+- **Biomimetic nanoparticles.** Cell membrane-coated nanoparticles inherit the surface properties of their source cells, enabling immune evasion and tissue-specific targeting [Li et al., 2021].
 
 - **Ferritin nanocages.** Self-assembling protein cages (~12 nm) derived from ferritin can encapsulate drug payloads and be engineered with targeting ligands. Their biological origin provides inherent biocompatibility.
 
@@ -104,11 +105,11 @@ The pillars above are not independent. A complete cellular health intervention w
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                  DELIVERY LAYER                      │
+│                  DELIVERY LAYER                     │
 │  Biomimetic NPs / Exosomes / Ferritin Nanocages     │
 │  ┌───────────────────────────────────────────────┐  │
-│  │              TARGETING LAYER                   │  │
-│  │  Bioorthogonal pre-labeling + tissue tropism   │  │
+│  │              TARGETING LAYER                  │  │
+│  │  Bioorthogonal pre-labeling + tissue tropism  │  │
 │  │  ┌───────────────────────────────────────────┐│  │
 │  │  │           PAYLOAD LAYER                   ││  │
 │  │  │  Cas9 RNP / Base editors / mRNA           ││  │
@@ -120,20 +121,20 @@ The pillars above are not independent. A complete cellular health intervention w
                         │
                         ▼
 ┌─────────────────────────────────────────────────────┐
-│              INTRACELLULAR ACTION                     │
-│  Gene correction ─── Organelle supplementation       │
-│  Epigenetic reset ── Metabolic restoration           │
-│  Aggregate clearance ── Partial reprogramming        │
+│              INTRACELLULAR ACTION                   │
+│  Gene correction ─── Organelle supplementation      │
+│  Epigenetic reset ── Metabolic restoration          │
+│  Aggregate clearance ── Partial reprogramming       │
 └─────────────────────────────────────────────────────┘
                         │
                         ▼
 ┌─────────────────────────────────────────────────────┐
-│              HEALTH OUTCOMES                         │
-│  Metabolic disease reversal                          │
-│  Age-related decline mitigation                      │
-│  Immune function restoration                         │
-│  Tissue regeneration                                 │
-│  Neurodegenerative protein clearance                 │
+│              HEALTH OUTCOMES                        │
+│  Metabolic disease reversal                         │
+│  Age-related decline mitigation                     │
+│  Immune function restoration                        │
+│  Tissue regeneration                                │
+│  Neurodegenerative protein clearance                │
 └─────────────────────────────────────────────────────┘
 ```
 
@@ -174,7 +175,7 @@ Operating at the cellular level introduces unique safety considerations:
 |---|---|---|---|
 | CRISPR base editing (ex vivo) | 7-8 | Manufacturing scale | Already entering clinic |
 | CRISPR base editing (in vivo) | 4-5 | Tissue-specific delivery | Near-term (2-5 yr) |
-| Mitochondrial gene editing | 2-3 | Delivery across double membrane | Medium-term (5-10 yr) |
+| Mitochondrial gene editing (DdCBE/TALED) | 2-3 | Delivery across double membrane, limited editing types | Medium-term (5-10 yr) |
 | Artificial organelles | 2-3 | In vivo stability, manufacturing | Medium-term (5-10 yr) |
 | Partial reprogramming | 3-4 | Temporal control, safety | Medium-term (5-10 yr) |
 | Bioorthogonal prodrug activation | 4-5 | Reaction kinetics in vivo | Near-term (2-5 yr) |
@@ -188,7 +189,7 @@ Operating at the cellular level introduces unique safety considerations:
 **Phase 1 — Foundation (Year 1-2):**
 1. Characterize artificial organelle stability in human cell lines across multiple tissue types
 2. Develop standardized bioorthogonal labeling protocols for tissue-specific targeting
-3. Benchmark high-fidelity Cas9 variants for mitochondrial genome access
+3. Optimize DdCBE and TALED delivery to mitochondria and benchmark editing efficiency across mtDNA target sites
 4. Establish in vitro partial reprogramming protocols with quantified safety margins
 
 **Phase 2 — Integration (Year 2-4):**
@@ -227,6 +228,11 @@ Operating at the cellular level introduces unique safety considerations:
 19. Gispert I et al. Stimuli-responsive vesicles as distributed artificial organelles for bacterial activation. *PNAS*. 2022;119:e2206563119.
 20. Cao S et al. Dipeptide coacervates as artificial membraneless organelles for bioorthogonal catalysis. *Nat Commun*. 2024;15:39.
 21. Stanley S. Biological nanoparticles and their influence on organisms. *Curr Opin Biotechnol*. 2014;28:69-74.
-22. Recent progress in targeted delivery vectors based on biomimetic nanoparticles. *Signal Transduct Target Ther*. 2021.
+22. Li Z, Wang Z, Dinh PC, et al. Recent progress in targeted delivery vectors based on biomimetic nanoparticles. *Signal Transduct Target Ther*. 2021;6:225.
+23. Mok BY, de Moraes MH, Zeng J, et al. A bacterial cytidine deaminase toxin enables CRISPR-free mitochondrial base editing. *Nature*. 2020;583:631-637.
+24. Ocampo A, Reddy P, Martinez-Redondo P, et al. In vivo amelioration of age-associated hallmarks by partial reprogramming. *Cell*. 2016;167:1719-1733.
+25. Ieda M, Fu JD, Delgado-Olguin P, et al. Direct reprogramming of fibroblasts into functional cardiomyocytes by defined factors. *Cell*. 2010;142:375-386.
+26. Qian L, Huang Y, Spencer CI, et al. In vivo reprogramming of murine cardiac fibroblasts into induced cardiomyocytes. *Nature*. 2012;485:593-598.
+27. Rivetti di Val Cervo P, Romanov RA, Sez G, et al. Induction of functional dopamine neurons from human astrocytes in vitro and mouse astrocytes in a Parkinson's disease model. *Nat Biotechnol*. 2017;35:444-452.
 
 ---
