@@ -1,1 +1,1 @@
-# biotech-notes
+# biotechnology
