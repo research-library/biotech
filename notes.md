@@ -8,7 +8,7 @@
 
 ## 1. Abstract
 
-This document outlines a design framework for improving human health through small-scale biotechnology interventions operating at the cellular and subcellular level. The approach centers on engineering biological systems from within: artificial organelles, programmable gene editing (CRISPR-Cas9, prime editing, and the newly discovered TIGR-Tas systems), RNA-based gene regulation (microRNAs), biomolecular condensate engineering, programmable delivery vehicles, protein and peptide therapeutics, and cellular reprogramming including stem cell and cell-based therapies. These interventions aim to restore, enhance, or supplement native cellular function in the context of aging, metabolic disease, immune dysfunction, and tissue degeneration.
+This document outlines a design framework for improving human health through small-scale biotechnology interventions operating at the cellular and subcellular level. The approach centers on engineering biological systems from within: programmable gene editing (CRISPR-Cas9, prime editing, and the newly discovered TIGR-Tas systems), RNA-based gene regulation (microRNAs), biomolecular condensate engineering, programmable delivery vehicles, protein and peptide therapeutics, and cellular reprogramming including stem cell and cell-based therapies. These interventions aim to restore, enhance, or supplement native cellular function in the context of aging, metabolic disease, immune dysfunction, and tissue degeneration.
 
 ---
 
