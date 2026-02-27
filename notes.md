@@ -305,40 +305,33 @@ Operating at the cellular level introduces unique safety considerations:
 ## 8. Proposed Research Priorities
 
 **Phase 1 — Foundation (Year 1–2):**
-1. Characterize artificial organelle stability in human cell lines across multiple tissue types
-2. Benchmark TIGR-Tas (TasR) editing efficiency and off-target profiles against CRISPR-Cas9 and prime editing across matched genomic loci in human cells
-3. Optimize DdCBE and TALED delivery to mitochondria and benchmark editing efficiency across mtDNA target sites
-4. Establish in vitro partial reprogramming protocols with quantified safety margins
-5. Develop miRNA-based therapeutic candidates targeting validated disease-associated miRNAs with characterized TDMD-based safety switches
-6. Characterize iPSC-derived cell products (dopaminergic neurons, cardiomyocytes) for functional maturation markers and tumorigenicity
-7. Design and test synthetic phase-separating scaffolds for intracellular enzyme co-localization in mammalian cell culture
-8. Validate senolytic pre-treatment protocols that improve stem cell engraftment in aged tissue models
+1. Benchmark TIGR-Tas (TasR) editing efficiency and off-target profiles against CRISPR-Cas9 and prime editing across matched genomic loci in human cells
+2. Optimize DdCBE and TALED delivery to mitochondria and benchmark editing efficiency across mtDNA target sites
+3. Establish in vitro partial reprogramming protocols with quantified safety margins
+4. Develop miRNA-based therapeutic candidates targeting validated disease-associated miRNAs with characterized TDMD-based safety switches
+5. Characterize iPSC-derived cell products (dopaminergic neurons, cardiomyocytes) for functional maturation markers and tumorigenicity
+6. Design and test synthetic phase-separating scaffolds for intracellular enzyme co-localization in mammalian cell culture
+7. Validate senolytic pre-treatment protocols that improve stem cell engraftment in aged tissue models
 
 **Phase 2 — Integration (Year 2–4):**
 
-9. Combine delivery vehicles with artificial organelle payloads in animal models
+8. Engineer compact TIGR-Tas constructs for single-AAV delivery and test in animal models
 
-10. Engineer compact TIGR-Tas constructs for single-AAV delivery and test in animal models
+9. Test cyclic partial reprogramming in aged animal tissues with longitudinal tracking
 
-11. Test cyclic partial reprogramming in aged animal tissues with longitudinal tracking
+10. Develop combinatorial RNA therapeutic strategies (miRNA mimics + gene editing) with validated dose-response relationships
 
-12. Develop combinatorial RNA therapeutic strategies (miRNA mimics + gene editing) with validated dose-response relationships
+11. Test condensate-dissolving compounds in ALS/FTD animal models with phase transition biomarkers
 
-13. Test condensate-dissolving compounds in ALS/FTD animal models with phase transition biomarkers
-
-14. Combine senolytic clearance with iPSC-derived cell therapy in aged animal models of Parkinson's disease
+12. Combine senolytic clearance with iPSC-derived cell therapy in aged animal models of Parkinson's disease
 
 **Phase 3 — Translation (Year 4–7):**
 
-15. GMP manufacturing of lead artificial organelle and delivery vehicle candidates
+13. IND-enabling safety and efficacy studies for top disease indications
 
-16. IND-enabling safety and efficacy studies for top disease indications
+14. Clinical development of miRNA-based therapeutics with LNP tissue-targeted delivery
 
-17. First-in-human trials for ex vivo prime-edited cell therapies with artificial organelle augmentation
-
-18. Clinical development of miRNA-based therapeutics with LNP tissue-targeted delivery
-
-19. Phase I trials of senolytic + regenerative combination therapies
+15. Phase I trials of senolytic + regenerative combination therapies
 
 ---
 
