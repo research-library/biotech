@@ -1,4 +1,4 @@
-# [biotech](https://www.nature.com/nbt/) notes
+# notes
 
 * generated
 
