@@ -1,6 +1,9 @@
+# [biotech](https://www.nature.com/nbt/) notes
+
+* generated
+
 # Draft: Improving Human Health with Small-Scale Biotechnology
 
----
 
 ## 1. Abstract
 
