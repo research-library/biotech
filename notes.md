@@ -125,7 +125,7 @@ where $N$ is the effective polymer length (degree of polymerization), $\chi$ is 
 
 **Design targets:**
 
-- **Synthetic condensates as intracellular reaction compartments.** Engineered phase-separating scaffolds (e.g., multivalent IDR fusions or coiled-coil oligomerization domains) could concentrate specific enzymes and substrates, accelerating desired metabolic reactions without requiring membrane encapsulation. Unlike membrane-bound artificial organelles, condensates are inherently dynamic and reversible—they can dissolve when their function is no longer needed, reducing the risk of chronic intracellular foreign bodies.
+- **Synthetic condensates as intracellular reaction compartments.** Engineered phase-separating scaffolds (e.g., multivalent IDR fusions or coiled-coil oligomerization domains) could concentrate specific enzymes and substrates, accelerating desired metabolic reactions without requiring membrane encapsulation. Condensates are inherently dynamic and reversible—they can dissolve when their function is no longer needed, reducing the risk of chronic intracellular foreign bodies.
 
 - **Condensate-dissolving therapeutics.** Small molecules or peptides that disrupt pathological solid-like condensates (e.g., in ALS motor neurons) could restore normal RNA processing and protein homeostasis. This is mechanistically distinct from aggregate clearance via lysosomal augmentation: it targets the aberrant phase transition itself rather than clearing the end-product.
 
@@ -170,7 +170,7 @@ Proteins and peptides operate at the molecular scale (typically 1–10 nm) and s
 
 - **Protein-based delivery scaffolds.** Ferritin nanocages (~12 nm, 24-mer self-assembly) and other protein cage architectures provide biocompatible vehicles for drug encapsulation and targeted delivery. Their biological origin provides inherent biocompatibility and the capacity for genetic fusion of targeting ligands.
 
-- **De novo protein design.** Computational methods (Rosetta, machine learning-based approaches including structure prediction networks) now enable design of proteins with novel folds and functions not found in nature. This capability is relevant to designing: synthetic receptors for engineered cell signaling, novel enzyme activities for metabolic supplementation, scaffolds for organizing multi-enzyme cascades within artificial organelles, and phase-separating domains for synthetic condensate engineering (see Section 3.4).
+- **De novo protein design.** Computational methods (Rosetta, machine learning-based approaches including structure prediction networks) now enable design of proteins with novel folds and functions not found in nature. This capability is relevant to designing: synthetic receptors for engineered cell signaling, novel enzyme activities for metabolic supplementation, scaffolds for organizing multi-enzyme cascades, and phase-separating domains for synthetic condensate engineering (see Section 3.4).
 
 **Quantitative considerations.** Protein folding stability is governed by the Gibbs free energy of folding:
 
@@ -255,7 +255,7 @@ The pillars above are not independent. A complete cellular health intervention w
 | Type 2 Diabetes | Pancreatic β-cell dysfunction, insulin resistance | Mitochondrial supplementation in β-cells, partial reprogramming of exhausted islet cells |
 | Parkinson's Disease | Dopaminergic neuron loss, α-synuclein aggregation | Lysosomal augmentation for aggregate clearance, direct conversion of astrocytes to dopaminergic neurons, iPSC-derived dopaminergic neuron transplantation |
 | ALS / Frontotemporal Dementia | Aberrant liquid-to-solid phase transitions (FUS, TDP-43) | Condensate-dissolving therapeutics, proteostasis network restoration, engineered chaperone delivery |
-| Age-related Macular Degeneration | RPE cell degeneration | Artificial organelles for oxidative stress management, RPE cell reprogramming |
+| Age-related Macular Degeneration | RPE cell degeneration | RPE cell reprogramming |
 | Heart Failure | Cardiomyocyte loss and dysfunction | Direct fibroblast-to-cardiomyocyte conversion, mitochondrial gene editing, iPSC-derived cardiomyocyte therapy |
 | Immune Senescence | T-cell exhaustion, thymic involution, senescent cell accumulation | Epigenetic reprogramming of exhausted T-cells, senolytic clearance of SASP-producing cells, miRNA modulation of senescence pathways |
 | Osteoarthritis | Chondrocyte senescence, ECM degradation | Senolytic pre-treatment + stem cell niche engineering, stimuli-responsive anti-inflammatory vesicles |
@@ -268,13 +268,13 @@ The pillars above are not independent. A complete cellular health intervention w
 
 Operating at the cellular level introduces unique safety considerations:
 
-- **Kill switches.** All engineered components (synthetic cells, artificial organelles, gene circuits, synthetic condensates) must include inducible self-destruct or dissolution mechanisms. Synthetic biology provides multiple validated kill switch architectures.
+- **Kill switches.** All engineered components (synthetic cells, gene circuits, synthetic condensates) must include inducible self-destruct or dissolution mechanisms. Synthetic biology provides multiple validated kill switch architectures.
 
 - **Immune clearance compatibility.** Interventions should be designed to be cleared by the immune system after a defined operational period rather than persisting indefinitely.
 
 - **Off-target editing mitigation.** For CRISPR-based, prime editing, and TIGR-Tas-based approaches, guide specificity must be validated computationally and experimentally. Prime editing has inherently lower off-target activity than nuclease-active Cas9 because it requires both target binding and successful reverse transcription [Anzalone et al., 2019]. The dual-spacer requirement of TIGR-Tas may also reduce off-target activity (analogous to paired nickase strategies), though this has not been systematically validated. High-fidelity Cas9 variants reduce off-target activity for standard CRISPR approaches.
 
-- **Dose-response characterization.** Artificial organelles, delivery vehicles, condensate-forming scaffolds, and RNA therapeutics must be titratable. Excessive intracellular cargo could disrupt native cellular function. For miRNA-based interventions, supraphysiological miRNA levels can saturate the RISC machinery, causing widespread off-target silencing. For synthetic condensates, uncontrolled phase separation could sequester essential cellular components.
+- **Dose-response characterization.** Delivery vehicles, condensate-forming scaffolds, and RNA therapeutics must be titratable. Excessive intracellular cargo could disrupt native cellular function. For miRNA-based interventions, supraphysiological miRNA levels can saturate the RISC machinery, causing widespread off-target silencing. For synthetic condensates, uncontrolled phase separation could sequester essential cellular components.
 
 - **Reversibility.** Where possible, interventions should be designed to be reversible or self-limiting. RNA-based approaches (miRNA mimics, siRNA) are inherently transient. Condensates are inherently dynamic and can be designed to dissolve. Epigenetic modifications are preferred over permanent genome edits when both are viable.
 
@@ -319,17 +319,16 @@ Operating at the cellular level introduces unique safety considerations:
 9. Combine delivery vehicles with artificial organelle payloads in animal models
 10. Engineer compact TIGR-Tas constructs for single-AAV delivery and test in animal models
 11. Test cyclic partial reprogramming in aged animal tissues with longitudinal tracking
-12. Engineer stimuli-responsive artificial organelles that activate in disease-state cells
-13. Develop combinatorial RNA therapeutic strategies (miRNA mimics + gene editing) with validated dose-response relationships
-14. Test condensate-dissolving compounds in ALS/FTD animal models with phase transition biomarkers
-15. Combine senolytic clearance with iPSC-derived cell therapy in aged animal models of Parkinson's disease
+12. Develop combinatorial RNA therapeutic strategies (miRNA mimics + gene editing) with validated dose-response relationships
+13. Test condensate-dissolving compounds in ALS/FTD animal models with phase transition biomarkers
+14. Combine senolytic clearance with iPSC-derived cell therapy in aged animal models of Parkinson's disease
 
 **Phase 3 — Translation (Year 4–7):**
-16. GMP manufacturing of lead artificial organelle and delivery vehicle candidates
-17. IND-enabling safety and efficacy studies for top disease indications
-18. First-in-human trials for ex vivo prime-edited cell therapies with artificial organelle augmentation
-19. Clinical development of miRNA-based therapeutics with LNP tissue-targeted delivery
-20. Phase I trials of senolytic + regenerative combination therapies
+15. GMP manufacturing of lead artificial organelle and delivery vehicle candidates
+16. IND-enabling safety and efficacy studies for top disease indications
+17. First-in-human trials for ex vivo prime-edited cell therapies with artificial organelle augmentation
+18. Clinical development of miRNA-based therapeutics with LNP tissue-targeted delivery
+19. Phase I trials of senolytic + regenerative combination therapies
 
 ---
 
