@@ -215,7 +215,6 @@ The pillars above are not independent. A complete cellular health intervention w
 │  │  │           PAYLOAD LAYER                   ││  │
 │  │  │  Cas9 RNP / TasR / Prime editors / mRNA   ││  │
 │  │  │  miRNA mimics / anti-miRs / siRNA         ││  │
-│  │  │  Artificial organelle components          ││  │
 │  │  │  Condensate-forming scaffolds             ││  │
 │  │  │  Reprogramming factor cassettes           ││  │
 │  │  │  Therapeutic peptides / enzymes           ││  │
