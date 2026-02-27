@@ -372,5 +372,6 @@ Operating at the cellular level introduces unique safety considerations:
 33. Baker DJ, Childs BG, Durik M, et al. Naturally occurring p16^Ink4a-positive cells shorten healthy lifespan. *Nature*. 2016;530:184-189.
 34. Hou X, Zaks T, Langer R, Dong Y. Lipid nanoparticles for mRNA delivery. *Nat Rev Mater*. 2021;6:1078-1094.
 35. Hipp MS, Kasturi P, Hartl FU. The proteostasis network and its decline in ageing. *Nat Rev Mol Cell Biol*. 2019;20:421-435.
-36. Morris SA. Redefining cellular reprogramming with advanced genomic technologies. *Nat Rev Genet*. 2026;27:193-211   
+36. Morris SA. Redefining cellular reprogramming with advanced genomic technologies. *Nat Rev Genet*. 2026;27:193-211
+37. Yu M, Ai L, Wang B, et al. GenomePAM directs PAM characterization and engineering of CRISPR-Cas nucleases using mammalian genome repeats. *Nat Biomed Eng*. 2026;10:231-244. https://doi.org/10.1038/s41551-025-01464-y
 
