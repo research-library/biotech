@@ -27,27 +27,9 @@ Key scale references:
 
 ## 3. Design Pillars
 
-### 3.1 Artificial Organelles for Functional Restoration
+### 3.1 Precision Gene Editing for Cellular Repair
 
-Artificial organelles represent a category of engineered subcellular structures that can be introduced into living cells to supplement or replace damaged native organelles [Oerlemans et al., 2021]. This is not speculative; recent work has demonstrated functional artificial organelles in human neural stem cells that improve oxidative phosphorylation [Wang et al., 2024].
-
-**Design targets:**
-
-- **Mitochondrial supplementation.** Synthetic compartments that augment mitochondrial function—for example, by providing antioxidant enzymatic activity or supplementing specific metabolic reactions—could be deployed in cells with mitochondrial dysfunction. This is relevant to aging, Parkinson's disease, and metabolic syndrome. Full reconstitution of the electron transport chain in synthetic compartments remains an unsolved challenge due to the complexity of membrane-embedded protein complexes I–V and the requirement for a proton motive force across an intact inner membrane. However, partial metabolic supplementation is more tractable: dipeptide coacervates have been demonstrated as membraneless artificial organelles capable of hosting catalysis [Cao et al., 2024], and Wang et al. showed that artificial organelles derived from neural stem cells can improve oxidative phosphorylation [Wang et al., 2024].
-
-- **Lysosomal augmentation.** Engineered vesicles with enhanced proteolytic capability could clear misfolded protein aggregates (amyloid-β, α-synuclein, tau) that native lysosomes fail to process. This design target is motivated by the broader decline of the proteostasis network with aging: as chaperone capacity, proteasomal activity, and autophagic flux all diminish, aggregation-prone proteins increasingly overwhelm endogenous clearance mechanisms [Hipp et al., 2019]. Giant organelle vesicles have been developed to study the biophysical properties of intracellular membranes relevant to such designs [Santinho et al., 2024], though the construction of functional proteolytic artificial lysosomes remains an open challenge.
-
-- **Stimuli-responsive synthetic organelles.** Vesicles that activate in response to specific environmental signals could provide on-demand therapeutic activity. Gispert et al. demonstrated stimuli-responsive vesicles as distributed artificial organelles in bacterial systems [Gispert et al., 2022]. Translating this concept to mammalian intracellular environments—where relevant triggers include pH shifts, ROS accumulation, and calcium flux—remains an active area of research with additional engineering challenges including endosomal escape and cytoplasmic stability.
-
-**Open questions:**
-- Long-term stability inside human cells (weeks to months)—most demonstrations are in vitro over hours to days
-- Immune evasion and biocompatibility of synthetic compartments in vivo
-- Scalable manufacturing of organelle-scale structures with batch-to-batch consistency
-- Endosomal escape: ensuring delivered artificial organelles reach the cytoplasm rather than being degraded in lysosomes
-
-### 3.2 Precision Gene Editing for Cellular Repair
-
-#### 3.2.1 CRISPR-Cas9 and Prime Editing
+#### 3.1.1 CRISPR-Cas9 and Prime Editing
 
 CRISPR-Cas9 and its derivatives provide a programmable toolkit for correcting pathogenic mutations, silencing harmful genes, or activating protective ones [Jinek et al., 2012]. The system was developed from prokaryotic adaptive immunity: CRISPR repeat sequences were first identified in *E. coli* in 1987 (Ishino et al.), the defensive function was experimentally confirmed in 2007 (Barrangou & Horvath), and the system was reconstituted as a programmable dual-RNA–guided DNA endonuclease in 2012 (Jinek et al.), earning the 2020 Nobel Prize in Chemistry for Charpentier and Doudna [Gostimskaya, 2022].
 
@@ -61,14 +43,14 @@ CRISPR-Cas9 and its derivatives provide a programmable toolkit for correcting pa
 
 - **Epigenetic reprogramming.** Synthetic regulatory elements designed via generative models (diffusion-based approaches) may enable control of chromatin accessibility and gene expression without permanent genome modification [DaSilva et al., 2024; preprint, not yet peer-reviewed]. Complementary computational tools like ChromoGen can predict single-cell chromatin conformations from sequence [Schuette et al., 2025], which could inform the rational design of epigenetic interventions, though the gap between predicting chromatin states and engineering desired transcriptional outcomes remains substantial.
 
-**Ethical considerations.** Germline editing remains ethically contentious. The 2018 He Jiankui incident—in which CCR5 was edited in human embryos resulting in live births—demonstrated the risks of premature clinical application, including mosaicism and uncertain off-target effects. The scientific community broadly condemned the work. At least 19 countries prohibit heritable genome editing, while somatic (non-heritable) editing is proceeding through established clinical trial frameworks [Gostimskaya, 2022]. All gene editing interventions discussed in this document target somatic cells only.
+**Ethical considerations.** All gene editing interventions discussed in this document target somatic cells only.
 
 **Delivery engineering:**
 - Cas9 ribonucleoprotein preparation protocols are well-established [Lin et al., 2022]
 - Delivery system engineering for therapeutic applications spans lipid nanoparticles (LNPs), viral vectors, and exosome-based carriers [Cheng et al., 2021]. LNP technology, validated at scale by the mRNA COVID-19 vaccines, provides a well-characterized platform for nucleic acid delivery with tunable biodistribution [Hou et al., 2021]
 - Guide RNA activity and specificity are sequence-length dependent, requiring careful design [Zhao et al., 2019]
 
-#### 3.2.2 TIGR-Tas: A New RNA-Guided DNA-Targeting System
+#### 3.1.2 TIGR-Tas: A New RNA-Guided DNA-Targeting System
 
 TIGR-Tas (Tandem Interspaced Guide RNA arrays paired with TIGR-Associated proteins) represent a newly discovered family of RNA-guided DNA-targeting systems found in prokaryotic viruses and parasitic bacteria [Faure et al., 2025]. Over 20,000 Tas protein variants have been catalogued through structural and sequence homology mining.
 
@@ -92,7 +74,7 @@ TIGR arrays are processed into 36-nucleotide guide RNAs (tigRNAs), each containi
 
 **Current limitations.** TIGR-Tas systems are at an early stage of characterization (TRL 1–2). Off-target profiles, editing fidelity, and chromatin accessibility effects have not been systematically benchmarked. The dual-spacer requirement may impose constraints on guide design flexibility. The evolutionary origin in phages—sharing structural similarity with box C/D small nucleolar ribonucleoproteins (snoRNPs) and IS110 RNA-guided transposases—suggests these may represent an ancestral RNA-guided system, with implications for understanding the evolution of RNA-guided mechanisms broadly.
 
-### 3.3 RNA-Based Gene Regulation: microRNAs
+### 3.2 RNA-Based Gene Regulation: microRNAs
 
 MicroRNAs (miRNAs) are ~21–25 nucleotide non-coding RNAs that regulate gene expression post-transcriptionally, predominantly by guiding the RNA-induced silencing complex (RISC) to complementary sites in the 3′ UTR of target mRNAs [Shang et al., 2023].
 
@@ -129,7 +111,7 @@ $$\text{FR}_{\text{total}} \approx \prod_{i=1}^{n} \text{FR}_i$$
 
 This framework constrains the design of therapeutic miRNA interventions: achieving strong repression (>10×) of a single target typically requires either very high miRNA concentrations, high-affinity extended seed pairing, or multiple cooperative binding sites in the 3′ UTR.
 
-### 3.4 Biomolecular Condensates and Synthetic Phase-Separated Compartments
+### 3.3 Biomolecular Condensates and Synthetic Phase-Separated Compartments
 
 Cells organize many biochemical processes not through membrane-bound organelles but through biomolecular condensates—membraneless compartments formed by liquid-liquid phase separation (LLPS) of multivalent proteins and RNA [Shin & Brangwynne, 2017]. Stress granules, P-bodies, the nucleolus, and transcriptional condensates at super-enhancers are all examples. These structures form and dissolve rapidly in response to cellular conditions, concentrate specific molecular species by orders of magnitude, and can undergo pathological liquid-to-solid transitions implicated in neurodegeneration (ALS, frontotemporal dementia) and cancer.
 
@@ -154,9 +136,9 @@ where $N$ is the effective polymer length (degree of polymerization), $\chi$ is 
 - The relationship between in vitro reconstituted condensates and their in vivo counterparts is not always straightforward—crowding, post-translational modifications, and active processes (ATP-dependent remodeling) all modulate condensate behavior in cells
 - Delivery of phase-separating components without triggering premature condensation during transit
 
-### 3.5 Cell Reprogramming, Stem Cell, and Cell-Based Therapy
+### 3.4 Cell Reprogramming, Stem Cell, and Cell-Based Therapy
 
-#### 3.5.1 Cellular Reprogramming
+#### 3.4.1 Cellular Reprogramming
 
 Yamanaka factors (Oct4, Sox2, Klf4, c-Myc) demonstrated that somatic cells can be reprogrammed to pluripotency [Takahashi & Yamanaka, 2006]. Partial reprogramming (transient expression of these factors) has shown potential for cellular rejuvenation without full dedifferentiation.
 
@@ -166,7 +148,7 @@ Yamanaka factors (Oct4, Sox2, Klf4, c-Myc) demonstrated that somatic cells can b
 
 - **Direct lineage conversion.** Bypassing the pluripotent state entirely, somatic cells can be converted directly to needed cell types using defined transcription factor cocktails. Ieda et al. demonstrated direct reprogramming of fibroblasts to cardiomyocyte-like cells using Gata4, Mef2c, and Tbx5 [Ieda et al., 2010], and Qian et al. showed in vivo cardiac reprogramming [Qian et al., 2012]. Astrocyte-to-neuron conversion has been demonstrated using NeuroD1 and other factors [Rivetti di Val Cervo et al., 2017]. This approach is relevant to tissue repair after injury, though conversion efficiency, functional maturation, and long-term stability of converted cells remain active research challenges.
 
-#### 3.5.2 Stem Cell and Cell-Based Therapy
+#### 3.4.2 Stem Cell and Cell-Based Therapy
 
 - **iPSC-derived cell therapies.** Induced pluripotent stem cells (iPSCs) can be differentiated into virtually any cell type, enabling autologous cell replacement therapies that avoid immune rejection. iPSC-derived dopaminergic neurons for Parkinson's disease and iPSC-derived cardiomyocytes for heart failure are in clinical trials. Characterization of synaptic vesicle properties in iPSC-derived dopaminergic neurons has provided insight into secretory vesicle pools relevant to disease modeling [Fujise et al., 2025].
 
@@ -176,7 +158,7 @@ Yamanaka factors (Oct4, Sox2, Klf4, c-Myc) demonstrated that somatic cells can b
 
 - **Senescent cell clearance as a prerequisite for regeneration.** Senescent cells secrete a complex mixture of pro-inflammatory cytokines, proteases, and growth factors (the senescence-associated secretory phenotype, or SASP) that can impair stem cell function and tissue repair. Baker et al. demonstrated that genetic clearance of p16^Ink4a-positive senescent cells in naturally aged mice extended median lifespan and attenuated age-related deterioration of kidney, heart, and adipose tissue [Baker et al., 2016]. Small-molecule senolytics (e.g., dasatinib + quercetin, navitoclax/ABT-263) that selectively kill senescent cells are in early clinical trials. Combining senolytic pre-treatment with cell-based regenerative therapies could improve engraftment and function of transplanted or reprogrammed cells by clearing the hostile SASP microenvironment.
 
-### 3.6 Proteins and Peptides as Therapeutic and Engineering Tools
+### 3.5 Proteins and Peptides as Therapeutic and Engineering Tools
 
 Proteins and peptides operate at the molecular scale (typically 1–10 nm) and serve as both therapeutic agents and engineering components for cellular interventions.
 
@@ -200,7 +182,7 @@ $$T_m = \frac{\Delta H_m}{\Delta S_m}$$
 
 where $\Delta H_m$ and $\Delta S_m$ are evaluated at $T_m$. For proteins intended for intracellular deployment, $T_m$ should exceed 37°C by a sufficient margin (typically $T_m$ > 45–55°C depending on the application), but the optimal range depends on whether the protein must undergo conformational changes for activity. Many native human enzymes function with $T_m$ values of 40–50°C; over-stabilization can reduce catalytic rates.
 
-### 3.7 Programmable Delivery Vehicles
+### 3.6 Programmable Delivery Vehicles
 
 Delivering therapeutic cargo to specific cell types in vivo remains the central bottleneck. Multiple platforms are under development:
 
@@ -214,7 +196,7 @@ Delivering therapeutic cargo to specific cell types in vivo remains the central 
 
 - **AAV vectors.** Adeno-associated virus vectors are the leading platform for in vivo gene therapy delivery but are constrained by a ~4.7 kb packaging limit with a sharp efficiency cliff beyond ~5.0 kb. The compact size of Tas effectors (~1/4 of SpCas9) directly addresses this bottleneck, potentially enabling single-vector delivery of editing machinery plus regulatory elements that is impractical with SpCas9 [Faure et al., 2025].
 
-- **Synthetic minimal cells.** Building on work constructing minimal bacterial genomes [Hutchison et al., 2016] and synthetic yeast chromosomes [Goold et al., 2025], it may be possible to engineer minimal synthetic cells that perform defined therapeutic functions and then self-terminate.
+- **Synthetic minimal cells.** Building on work constructing minimal bacterial genomes [Hutchison et al., 2016] and synthetic yeast chromosomes [Goold et al., 2025], it may be possible to engineer synthetic cells that perform defined therapeutic functions.
 
 ---
 
@@ -295,8 +277,6 @@ Operating at the cellular level introduces unique safety considerations:
 - **Dose-response characterization.** Artificial organelles, delivery vehicles, condensate-forming scaffolds, and RNA therapeutics must be titratable. Excessive intracellular cargo could disrupt native cellular function. For miRNA-based interventions, supraphysiological miRNA levels can saturate the RISC machinery, causing widespread off-target silencing. For synthetic condensates, uncontrolled phase separation could sequester essential cellular components.
 
 - **Reversibility.** Where possible, interventions should be designed to be reversible or self-limiting. RNA-based approaches (miRNA mimics, siRNA) are inherently transient. Condensates are inherently dynamic and can be designed to dissolve. Epigenetic modifications are preferred over permanent genome edits when both are viable.
-
-- **Germline protection.** All editing interventions must be restricted to somatic cells. Delivery systems should be engineered to exclude germline tissues, and protocols must include germline monitoring as a safety endpoint [Gostimskaya, 2022].
 
 ---
 
