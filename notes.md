@@ -214,7 +214,7 @@ The pillars above are not independent. A complete cellular health intervention w
                         ▼
 ┌─────────────────────────────────────────────────────┐
 │              INTRACELLULAR ACTION                   │
-│  Gene correction (CRISPR/TasR) ── Organelle suppl. │
+│  Gene correction (CRISPR/TasR) ── Organelle suppl.  │
 │  RNA regulation (miRNA) ── Metabolic restoration    │
 │  Epigenetic reset ── Protein supplementation        │
 │  Aggregate clearance ── Partial reprogramming       │
